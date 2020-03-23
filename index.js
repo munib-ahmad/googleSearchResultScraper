@@ -17,7 +17,7 @@ const parseCSV = () => {
 }
  
 (async function () {
-  const browser = await puppeteer.launch({headless:false});
+  const browser = await puppeteer.launch({headless:true});
   const page = await browser.newPage();
   let data = await parseCSV()
   let allLinks = []
